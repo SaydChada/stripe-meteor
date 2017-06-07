@@ -2,7 +2,7 @@ Package.describe({
 	summary: "Stripe.js and Node-Stripe brought to Meteor. This a fork of mrgalaxy:stripe package, all thanks to him.",
 	version: "2.2.2",
 	name: "schada:stripe",
-	git: "https://github.com/tyler-johnson/stripe-meteor.git"
+	git: "https://github.com/SaydChada/stripe-meteor.git"
 });
 
 Npm.depends({ "stripe": "4.22.0" });
@@ -16,7 +16,7 @@ Package.onUse(function(api) {
 });
 
 Package.on_test(function(api) {
-	api.use(['tinytest','mrgalaxy:stripe']);
+	api.use(['tinytest','schada:stripe']);
 	api.add_files([ "tests/client.js", "tests/checkout.js" ], 'client');
 	api.add_files([ "tests/server.js" ], 'server');
 });
